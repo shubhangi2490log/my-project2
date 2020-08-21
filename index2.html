@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marksheet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	
+	<div class="school_name">
+			<h1>School Name</h1>
+		</div>
+		<div class="Affilated">
+			<p style="text-align: center">(A CBSE Affilated Senior Secondary Co-educational English Medium MIddle School)</p>
+		</div>
+	
+	<div class="Board">
+			<h1>Complete Address</h1>
+		</div>
+		<div class="mark_sheet">
+			<h3>phone no-1111 2222-333</h3>
+				<h3>www.yourschool.co</h3>
+		</div>
+		<div class="section">
+			<h4>REPORT CARD(Session:2019-2020)</h4>
+			<p style="text-align: center">(Issued by School as per directives of Central Board os secondary education,Delhi</p>
+		</div>
+
+		<div class="mark_form">
+				<h1>Class-10th</h1>
+			</div>
+				
+			<table  border="0" cellspacing="0" cellpadding="10" >
+							<div class="stu_pro">
+								<h4>Student profile</h4>
+							</div>
+							<tr>
+								<td><label class="lab">Student Name:</label></td>
+								<td><span id="stn"></span></td>
+
+							</tr>
+
+							<tr>
+								<td><label class="lab">Roll No:</label></td>
+								<td><span id="ron"></span></td>
+
+							</tr>
+
+							<tr>
+								<td><label class="lab">Subject:</label></td>
+								<td><span id="sub"></span></td>
+
+							</tr>
+
+							<tr>
+								<td><label class="lab">marks:</label></td>
+								<td><span id="mam"></span></td>
+
+							</tr>
+
+							<tr>
+								<td><label class="lab">obtain mark:</label></td>
+								<td><span id="obma"></span></td>
+
+							</tr>
+
+
+							<tr>
+								<td><label class="lab">percentage:</label></td>
+								<td><span id="per">40</span></td>
+
+							</tr>
+
+							<tr>
+								<td><label class="lab">grade</label></td>
+								<td><span id="grade"></span></td>
+
+							</tr>
+
+							<tr>
+								
+								<td><span id="pf"></span></td>
+
+							</tr>
+
+
+			
+			</table>
+		</div>
+
+	<!--<table cellpadding="0">
+		<tr>
+			<th>Student Name</th>
+			
+			<th>Roll No</th>
+			<th>Subject</th>
+			<th>Max Marks</th>
+			<th>Total Marks</th>
+			<th>Percantage</th>
+			<th>Grade</th>
+		</tr>
+		<tr>
+			<td><span class="sp" id="stn"></span></td>
+			<td><span class="sp" id="ron"></span></td>
+			<td><span class="sp" id="sub"></span></td>
+			<td><span class="sp" id="mam"></span></td>
+			<td><span class="sp" id="obma"></span></td>
+			<td><span class="sp" id="per"></span></td>
+			<td><span class="sp" id="grade"></span></td>
+			</tr>
+	</table>-->
+	
+
+	<script type="text/javascript">
+		window.addEventListener('load',() => {
+			const name =localStorage.getItem("studentname");
+			const subject =localStorage.getItem("subject");
+			const rolln = localStorage.getItem("rollnumber");
+			var maxm = localStorage.getItem("maxmarks");
+			const obmr =localStorage.getItem("Obtainmark");
+		
+		document.getElementById("stn").innerHTML = name;
+		document.getElementById("sub").innerHTML = subject;
+		document.getElementById("ron").innerHTML =rolln;
+		document.getElementById("mam").innerHTML = maxm;
+		document.getElementById("obma").innerHTML = obmr;
+ })
+
+
+	</script>
+
+
+</body>
+</html>
